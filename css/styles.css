@@ -106,14 +106,6 @@ img {
   padding: 24px 0;
 }
 
-.header-logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
-}
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -332,7 +324,6 @@ img {
   display: flex;
   flex-direction: column;
   width: calc((100% - 48px) / 3);
-  border: 1px solid var(--cornflower);
   padding: 0;
   overflow: hidden;
 }
@@ -350,6 +341,7 @@ img {
   gap: 8px;
   gap: 8px;
   padding: 32px 16px;
+  border: 1px solid var(--cornflower);
 }
 
 .portfolio-list-head {
