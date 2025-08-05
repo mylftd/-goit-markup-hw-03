@@ -60,22 +60,28 @@ ul {
   margin: 0;
 }
 
-/*head*/
-
-.header {
+.container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*head*/
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .container-header {
-  width: 1158px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding: 24px 0;
 }
 
 .accent {
@@ -110,7 +116,6 @@ ul {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 
 .header-list {
@@ -154,10 +159,13 @@ ul {
 
 /*title*/
 
-.container-title {
+.title {
   background-color: var(--navy-blue);
-  margin-bottom: 120px;
 }
+
+/*.container-title {
+  margin-bottom: 120px;
+}*/
 
 .main-title {
   font-family: var(--font-family);
@@ -165,11 +173,11 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  text-align: center;
   color: var(--white);
-  padding-top: 188px;
+  margin: 0 auto;
+  padding: 188px 0;
   padding-bottom: 48px;
-  /*max-width: 496px;*/
+  max-width: 496px;
 }
 
 .title-button {
@@ -182,6 +190,7 @@ ul {
   background: var(--iris);
   cursor: pointer;
   border-radius: 4px;
+  height: 56px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
@@ -196,6 +205,7 @@ ul {
   display: flex;
   justify-content: center;
   padding-bottom: 188px;
+  min-width: 169px;
 }
 
 /*info*/
@@ -225,10 +235,10 @@ ul {
 
 .info-list {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 24px;
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding: 120px 0;
 }
 
 .title-benefits {
@@ -244,10 +254,13 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 120px;
 }
 
 /*team*/
+
+.container-team {
+  padding: 120px 0;
+}
 
 .team-list-head {
   font-weight: 700;
@@ -257,11 +270,12 @@ ul {
   text-align: center;
   color: var(--navy-blue);
   text-transform: capitalize;
-  padding: 120px 0;
+  padding-bottom: 120px;
 }
 
 .team {
   background-color: var(--cloud);
+  /*margin-bottom: 120px;*/
 }
 
 .team-list {
@@ -275,12 +289,17 @@ ul {
 }
 
 .team-list-img {
+  width: calc((100% - 72px) / 4);
   background-color: var(--white);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
-  max-width: 100%;
-  margin-bottom: 120px;
+}
+
+.team-list-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .team-list-name {
@@ -303,19 +322,43 @@ ul {
 
 /*portfolio*/
 
-.portfolio {
-  max-width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
+.сontainer-portfolio {
+  padding: 120px 0;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list-img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  gap: 24px;
+
+  /*max-width: 360px;*/
+  width: calc((100% - 48px) / 3);
+
+  border: 1px solid var(--cornflower);
+  border-top: none;
+}
+
+.portfolio-list-img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  gap: 8px;
   padding: 32px 16px;
-  margin-bottom: 120px;
 }
 
 .potfolio-list-head {
@@ -326,7 +369,7 @@ ul {
   text-align: center;
   color: var(--navy-blue);
   text-transform: capitalize;
-  padding: 120px 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list-name {
@@ -335,22 +378,14 @@ ul {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
-  padding: 32px 0 8px 16px;
+  /*padding: 32px 0 8px 16px;*/
 }
 
 .portfolio-list-descr {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 0 32px 16px;
-}
-
-.portfolio-list-img {
-  width: calc((100% - 24px) / 4);
-  align-items: flex-start;
-  width: 360px;
-  overflow: hidden;
-  border: 1px solid var(--cornflower);
+  /*padding: 0 0 0 16px;*/
 }
 
 /*footer*/
@@ -360,8 +395,7 @@ footer {
 }
 
 .container-footer {
-  max-width: 1158px;
-  padding: 0 15px;
+  padding: 100px 0;
 }
 
 .accent-footer {
@@ -385,12 +419,8 @@ footer {
 }
 
 .footer-site-wrap {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 0px;
-  padding-top: 100px;
-  margin: 0 auto;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
@@ -399,5 +429,4 @@ footer {
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
-  padding: 16px 0 100px;
 }

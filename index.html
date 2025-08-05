@@ -22,7 +22,7 @@
 
   <body>
     <header class="header">
-      <div class="container-header">
+      <div class="container container-header">
         <nav class="header-nav">
           <div class="header-logo">
             <a href="./index.html" class="site">
@@ -30,7 +30,9 @@
             >
           </div>
           <ul class="header-list">
-            <li><a class="header-list-link" href="./index.html">Studio</a></li>
+            <li>
+              <a class="header-list-link" href="./index.html">Studio</a>
+            </li>
             <li><a class="header-list-link" href="">Portfolio</a></li>
             <li><a class="header-list-link" href="">Contacts</a></li>
           </ul>
@@ -55,19 +57,21 @@
     <main>
       <!--title-->
       <section class="title">
-        <div class="container-title">
+        <div class="container container-title">
           <h1 class="main-title">
             Effective Solutions<br />
             for Your Business
           </h1>
-            <div class="button-wrap"><button type="button" class="title-button">Order Service</button></div>
+          <div class="button-wrap">
+            <button type="button" class="title-button">Order Service</button>
+          </div>
         </div>
       </section>
 
       <!--info-->
       <section class="info">
+        <div class="container container-info">
           <h2 class="info-head visually-hidden">Benefits</h2>
-          <div class="container-info"></div>
           <ul class="info-list">
             <li>
               <h3 class="title-benefits">Strategy</h3>
@@ -103,7 +107,7 @@
 
       <!--team-->
       <section class="team">
-        <div class="container-team">
+        <div class="container container-team">
           <h2 class="team-list-head">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-img">
@@ -151,8 +155,8 @@
       </section>
 
       <!--portfolio-->
-      <section class="potfolio">
-        <div class="container-portfolio">
+      <section class="portfolio">
+        <div class="container сontainer-portfolio">
           <h2 class="potfolio-list-head">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-list-img">
@@ -162,8 +166,10 @@
                 height="300"
                 alt="Banking application"
               />
-              <h3 class="portfolio-list-name">Banking App</h3>
-              <p class="portfolio-list-descr">App</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Banking App</h3>
+                <p class="portfolio-list-descr">App</p>
+              </div>
             </li>
             <li class="portfolio-list-img">
               <img
@@ -172,8 +178,10 @@
                 height="300"
                 alt="Casheless payment"
               />
-              <h3 class="portfolio-list-name">Cashless Payment</h3>
-              <p class="portfolio-list-descr">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Cashless Payment</h3>
+                <p class="portfolio-list-descr">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-img">
               <img
@@ -182,8 +190,10 @@
                 height="300"
                 alt="Meditation application"
               />
-              <h3 class="portfolio-list-name">Meditation App</h3>
-              <p class="portfolio-list-descr">App</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Meditation App</h3>
+                <p class="portfolio-list-descr">App</p>
+              </div>
             </li>
             <li class="portfolio-list-img">
               <img
@@ -192,8 +202,10 @@
                 height="300"
                 alt="Taxi service"
               />
-              <h3 class="portfolio-list-name">Taxi Service</h3>
-              <p class="portfolio-list-descr">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Taxi Service</h3>
+                <p class="portfolio-list-descr">Marketing</p>
+              </div>
             </li>
             <li class="portfolio-list-img">
               <img
@@ -202,8 +214,10 @@
                 height="300"
                 alt="Screen illustrations"
               />
-              <h3 class="portfolio-list-name">Screen Illustrations</h3>
-              <p class="portfolio-list-descr">Design</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Screen Illustrations</h3>
+                <p class="portfolio-list-descr">Design</p>
+              </div>
             </li>
             <li class="portfolio-list-img">
               <img
@@ -212,8 +226,10 @@
                 height="300"
                 alt="Woman taking online courses"
               />
-              <h3 class="portfolio-list-name">Online Courses</h3>
-              <p class="portfolio-list-descr">Marketing</p>
+              <div class="portfolio-card">
+                <h3 class="portfolio-list-name">Online Courses</h3>
+                <p class="portfolio-list-descr">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -222,10 +238,11 @@
 
     <!--footer-->
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container container-footer">
         <div class="footer-site-wrap">
           <a href="./index.html" class="footer-site"
-            >Web<span class="accent-footer">Studio</span></a>
+            >Web<span class="accent-footer">Studio</span></a
+          >
         </div>
         <p class="footer-text">
           Increase the flow of customers and sales for your business with
